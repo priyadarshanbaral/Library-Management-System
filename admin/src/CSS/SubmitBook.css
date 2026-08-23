@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+.submit-page{
+    padding:30px;
+    min-height:100vh;
+    background:#f4f7fb;
+}
+
+.submit-form{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.submit-form h2{
+    margin-bottom:20px;
+}
+
+.submit-form form{
+    display:grid;
+    grid-template-columns:1fr 1fr auto;
+    gap:15px;
+}
+
+.submit-form input{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+.submit-form input:focus{
+    border-color:#16a34a;
+}
+
+.submit-form button{
+    background:#16a34a;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:12px 25px;
+    cursor:pointer;
+}
+
+.submit-form button:hover{
+    background:#15803d;
+}
+
+.history{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.history h2{
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#0f172a;
+    color:#fff;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f8fafc;
+}
+
+.submitted{
+    background:#16a34a;
+    color:#fff;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+.submit-form form{
+    grid-template-columns:1fr;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+}

@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+.remove-page{
+    min-height:100vh;
+    background:#f5f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.remove-card{
+    width:100%;
+    max-width:500px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.remove-card h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#dc2626;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.input-group label{
+    margin-bottom:8px;
+    font-weight:600;
+    color:#475569;
+}
+
+.input-group input{
+    padding:12px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.input-group input:focus{
+    border-color:#dc2626;
+    box-shadow:0 0 5px rgba(220,38,38,.25);
+}
+
+.delete-btn{
+    width:100%;
+    padding:14px;
+    background:#dc2626;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.delete-btn:hover{
+    background:#b91c1c;
+}
+
+/* ---------- Responsive ---------- */
+@media(max-width:600px){
+    .remove-page{
+        padding:20px;
+    }
+
+    .remove-card{
+        padding:25px;
+    }
+
+    .remove-card h2{
+        font-size:22px;
+    }
+
+    .input-group input{
+        padding:11px;
+        font-size:14px;
+    }
+
+    .delete-btn{
+        padding:13px;
+        font-size:15px;
+    }
+}
