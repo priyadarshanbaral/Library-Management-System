@@ -45,7 +45,7 @@ function App() {
       path: "*",
       element: <Navigate to="/" replace />,
     },
-  ]);
+  ], { basename: import.meta.env.BASE_URL.replace(/\/$/, "") });
 
   return <RouterProvider router={router} />;
 }

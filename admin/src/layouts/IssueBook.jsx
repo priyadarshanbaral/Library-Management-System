@@ -73,7 +73,7 @@ function IssueBook() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:2700/api/issuebook", {
+      const res = await axios.post("/api/issuebook", {
         studentEmail: data.studentEmail,
         books: selectedBooks,
         dueDate: data.dueDate,
@@ -165,7 +165,7 @@ function IssueBook() {
                   onClick={() => !outOfStock && toggleBook(book.name)}
                 >
                   <img
-                    src={`http://localhost:2700/api/bookphoto/${book._id}`}
+                    src={`/api/bookphoto/${book._id}`}
                     alt={book.name}
                   />
 

@@ -25,7 +25,7 @@ function RemoveBook() {
 
     try {
       const res = await axios.delete(
-        `http://localhost:2700/api/deletebook?name=${book.name}`
+        `/api/deletebook?name=${book.name}`
       );
 
       toast.success(res.data.message);

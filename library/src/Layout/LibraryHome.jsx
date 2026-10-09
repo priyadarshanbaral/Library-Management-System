@@ -149,7 +149,7 @@ function LibraryHome() {
               Manage books, add/remove students, issue books, and view library
               statistics.
             </p>
-            <a href="http://localhost:5173" className="btn btn-admin">
+            <a href="/admin/" className="btn btn-admin">
               Login as Admin
             </a>
           </div>

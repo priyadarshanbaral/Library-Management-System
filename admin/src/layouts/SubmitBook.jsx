@@ -24,7 +24,7 @@ function SubmitBook() {
 
     try {
       const res = await axios.post(
-        "http://localhost:2700/api/submitbook",
+        "/api/submitbook",
         data
       );
 

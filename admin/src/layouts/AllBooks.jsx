@@ -94,7 +94,7 @@ function AllBooks() {
           {filteredBooks.map((book) => (
             <div className="book-card" key={book._id}>
               <img
-                src={`http://localhost:2700/api/bookphoto/${book._id}`}
+                src={`/api/bookphoto/${book._id}`}
                 alt={book.name}
               />
 
@@ -153,7 +153,7 @@ function AllBooks() {
               ) : (
                 <>
                   <img
-                    src={`http://localhost:2700/api/bookpage/${viewBook._id}/${currentPage}`}
+                    src={`/api/bookpage/${viewBook._id}/${currentPage}`}
                     alt={`Page ${currentPage + 1} of ${viewBook.name}`}
                     className="page-image"
                   />
@@ -183,7 +183,7 @@ function AllBooks() {
                     {Array.from({ length: pageCount }).map((_, i) => (
                       <img
                         key={i}
-                        src={`http://localhost:2700/api/bookpage/${viewBook._id}/${i}`}
+                        src={`/api/bookpage/${viewBook._id}/${i}`}
                         alt={`Page ${i + 1}`}
                         className={i === currentPage ? "thumb active" : "thumb"}
                         onClick={() => setCurrentPage(i)}
@@ -211,7 +211,7 @@ function AllBooks() {
             <div className="details-body">
               <div className="details-cover">
                 <img
-                  src={`http://localhost:2700/api/bookphoto/${detailBook._id}`}
+                  src={`/api/bookphoto/${detailBook._id}`}
                   alt={detailBook.name}
                 />
               </div>

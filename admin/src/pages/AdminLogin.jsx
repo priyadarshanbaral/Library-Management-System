@@ -27,7 +27,7 @@ function AdminLogin() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:2700/api/admin/login", {
+      const res = await axios.post("/api/admin/login", {
         email: adminData.email,
         password: adminData.password,
       });
@@ -97,7 +97,7 @@ function AdminLogin() {
 
         {/* ---------- Right Login Form ---------- */}
         <div className="login-form-wrapper">
-          <a href="http://localhost:5174" className="back-home-link">
+          <a href="/" className="back-home-link">
             ← Back to Home
           </a>
 
@@ -147,7 +147,7 @@ function AdminLogin() {
 
           <div className="student-panel-link">
             <span>🎓</span>
-            <a href="http://localhost:5174/studentlogin">
+            <a href="/studentlogin">
               Login to Student Panel
             </a>
           </div>
