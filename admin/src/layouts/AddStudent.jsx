@@ -26,7 +26,7 @@ function AddStudent() {
 
     try {
       const res = await axios.post(
-        "http://localhost:2700/api/addstudents",
+        "/api/addstudents",
         student
       );
 

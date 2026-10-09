@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:2700/api",
+  baseURL: "/api",
 });
 
 export default API;

@@ -187,7 +187,7 @@ function AddBook() {
       });
 
       const res = await axios.post(
-        "http://localhost:2700/api/allbooks",
+        "/api/allbooks",
         formData,
         {
           headers: {

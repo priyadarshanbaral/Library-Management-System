@@ -12,7 +12,7 @@ function RequestBook() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const res = await axios.get("http://localhost:2700/api/allbooks");
+        const res = await axios.get("/api/allbooks");
         if (res.data.success) {
           setBooks(res.data.data);
         }
@@ -35,7 +35,7 @@ function RequestBook() {
     setRequesting(bookName);
 
     try {
-      const res = await axios.post("http://localhost:2700/api/issuebook", {
+      const res = await axios.post("/api/issuebook", {
         studentEmail: studentData.email,
         bookName,
       });
@@ -67,7 +67,7 @@ function RequestBook() {
           {books.map((book) => (
             <div className="request-card" key={book._id}>
               <img
-                src={`http://localhost:2700/api/bookphoto/${book._id}`}
+                src={`/api/bookphoto/${book._id}`}
                 alt={book.name}
               />
               <div className="request-info">

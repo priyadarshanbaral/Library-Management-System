@@ -135,3 +135,21 @@ Student panel runs on **http://localhost:5174**
 ## 📄 License
 This project is for educational purposes.
 
+
+---
+
+## ☁️ Deploying on Netlify
+
+The project is deployed as a single Netlify site (https://lib-project0p.netlify.app):
+
+| Path       | What it serves                                         |
+|------------|--------------------------------------------------------|
+| `/`        | Student panel (`library/`)                             |
+| `/admin/`  | Admin panel (`admin/`)                                 |
+| `/api/*`   | API, as a Netlify Function (`netlify/functions/api.ts`) |
+
+Data is stored in **Netlify Database** (Postgres, schema in `db/schema.ts`) and book images in **Netlify Blobs**.
+Database migrations live in `netlify/database/migrations/` and are applied automatically on deploy.
+After changing the schema, run `npm run db:generate -- --name <change_name>`.
+
+For local development run `netlify dev` from the repository root.

@@ -61,7 +61,7 @@ function AdminDashboard() {
           className="logout-btn"
           onClick={() => {
             localStorage.removeItem("admin");
-            window.location.href = "/";
+            window.location.href = "/admin/";
           }}
         >
           🚪 Logout

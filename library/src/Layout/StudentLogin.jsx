@@ -27,7 +27,7 @@ function StudentLogin() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:2700/api/student/login", {
+      const res = await axios.post("/api/student/login", {
         email: student.email,
         password: student.password,
       });

@@ -24,7 +24,7 @@ function RemoveStudent() {
 
     try {
       const res = await axios.delete(
-        `http://localhost:2700/api/deletestudent?name=${student.name}&email=${student.email}`
+        `/api/deletestudent?name=${student.name}&email=${student.email}`
       );
 
       toast.success(res.data.message);
